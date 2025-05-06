@@ -9,7 +9,7 @@ class Music extends Media{
         this.length = length;
     }
     summary() {
-        return `Title: ${this.title}, Artist: ${this.artist}, Year ${this.year}, Genre: ${this.genre}, Length: ${this.length} seconds`;
+        return `Title: ${this.title}, Artist: ${this.artist}, Year: ${this.year}, Genre: ${this.genre}, Length: ${this.length} seconds`;
     }
     static shortestAlbum(music){
         return music.reduce((shortest, album) => {
